@@ -1,0 +1,27 @@
+[project]
+name = "code-coverage-agent"
+version = "0.1.0"
+description = "LangGraph-based agentic system for automated code coverage improvement"
+requires-python = ">=3.10"
+readme = "README.md"
+
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.5",
+    "langchain-anthropic>=0.1.0",
+    "gitpython>=3.1.0",
+    "azure-devops<=7.1.0b4",
+    "requests>=2.31.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "pyyaml>=6.0.1",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "aiofiles>=25.1.0",
+    "httpx>=0.26.0",
+    "click>=8.1.0",
+    "streamlit>=1.53.1",
+    "langgraph-cli[inmem]>=0.4.12",
+]
