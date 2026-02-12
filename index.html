@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vanna Agent</title>
+    
+    <!-- Load the Vanna web component -->
+    <script type="module" src="https://img.vanna.ai/vanna-components.js"></script>
+    
+    <style>
+        vanna-chat {
+            width: 100%;
+            height: 600px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat with Your Data</h1>
+    
+    <!-- Add the chat component -->
+    <vanna-chat
+        api-base="http://localhost:8000"
+        sse-endpoint="http://localhost:8000/api/vanna/v2/chat_sse"
+        ws-endpoint="http://localhost:8000/api/vanna/v2/chat_websocket"
+        poll-endpoint="http://localhost:8000/api/vanna/v2/chat_poll">
+    </vanna-chat>
+</body>
+</html>
